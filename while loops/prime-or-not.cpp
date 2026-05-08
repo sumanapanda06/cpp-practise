@@ -8,10 +8,10 @@ int main() {
     int start=2;
     while(start<n) {
         if(n%start==0) {
-            cout<<"not prime";
+            cout<<"not prime"<<endl;;
         }
         else {
-            cout<<"prime";
+            cout<<"prime"<<endl;;
         }
         start=start+1;
     }
