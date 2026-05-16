@@ -14,7 +14,7 @@ int main() {
         }
     }
     if (isPrime==0) {
-        cout<<"not prime";
+        cout<<"not rime";
     }
     else {
         cout<<"prime";
