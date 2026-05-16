@@ -15,4 +15,5 @@ int main() {
         n=n/10;
     }
     cout<<"Answer: "<<prod-sum;
+    return 0;
 }
