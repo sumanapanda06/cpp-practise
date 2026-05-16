@@ -5,7 +5,7 @@ int main() {
     cout<<"Enter value of n: ";
     cin>>n;
     int sum=0;
-    int prod=0;
+    int prod=1;
 
     while(n!=0) {
         int rem=n%10;
