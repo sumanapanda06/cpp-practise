@@ -1,20 +1,24 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main() {
     int n;
     cout<<"Enter value of n: ";
     cin>>n;
-    bool isPrime=1;
 
-    int i;
-    for(i=1; i<=(n-1); i++) {
+    bool isprime=1;
+    if(n<=1) {
+        cout<<"not prime";
+        return 0;
+    }
+
+    for(int i=2; i<=(n-1); i++) {
         if(n%i==0) {
-            isPrime=0;
+            isprime=0;
             break;
         }
     }
-    if (isPrime==0) {
-        cout<<"not rime";
+    if(isprime==0) {
+        cout<<"not prime";
     }
     else {
         cout<<"prime";
