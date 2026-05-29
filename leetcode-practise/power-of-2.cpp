@@ -5,10 +5,6 @@ int main() {
     cout<<"Enter value of n: ";
     cin>>n;
 
-    if(n<=0) {
-        cout<<"No";
-        return 0;
-    }
     while(n%2==0) {
         n=n/2;
     }
