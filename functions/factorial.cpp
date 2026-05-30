@@ -21,10 +21,7 @@ void factorial2() {
     cin>>n;
 
     int ans=1;
-    if(n==0) {
-        ans=0;
-    }
-
+    
     for(int i=1; i<=n; i++) {
         ans*=i;
     }
