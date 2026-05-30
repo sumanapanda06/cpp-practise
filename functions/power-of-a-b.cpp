@@ -2,7 +2,7 @@
 
 #include<iostream>
 using namespace std;
-int power() {
+int power() {               //int type function//
     int a,b;
     cin>>a;
     cin>>b;
@@ -12,9 +12,9 @@ int power() {
     for(int i=1; i<=b; i++) {
         ans=ans*a;
     }
-    return ans;
+    return ans;            //returns int type
 }
-void power1() {
+void power1() {            //void type function
     int a,b;
     cin>>a;
     cin>>b;
