@@ -9,6 +9,6 @@ int main() {
     for(int i=0; i<=n; i++) {
         avg+=i;
     }
-    float res=avg/n;
+    float res=(float)avg/n;
     cout<<res;
 }
