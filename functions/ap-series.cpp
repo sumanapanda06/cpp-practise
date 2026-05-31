@@ -16,7 +16,7 @@ void ap2() {
     cin>>n;
 
     int ap=3*n+7;
-    cout<<ap<<;
+    cout<<ap;
 }
 int main() {
     int final_answer=ap1();
