@@ -18,12 +18,8 @@ int main() {
     cout<<"Enter second number: ";
     cin>>num2;
 
-    if(num1>num2) {
-        int GCD=gcd(num1,num2);
-        cout<<"GCD: "<<GCD;
-    }
-    else {
-        int GCD=gcd(num2,num1);
-            cout<<"GCD: "<<GCD;
-    }
+    int GCD=gcd(num1,num2);
+    cout<<"for the input "<<num1<<" and "<<num2<<" GCD is: "<<GCD;
+
+    return 0;
 }
