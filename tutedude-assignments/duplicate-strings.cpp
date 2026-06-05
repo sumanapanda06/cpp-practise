@@ -6,31 +6,20 @@ int main() {
     string str;
     cin >> str;
 
-    string characters;
+    int freq[26] = {0};
 
-    int length_str = str.length();
-
-    for(int i = 0; i < length_str; i++) {
-        for(int j = i + 1; j < length_str; j++) {
-            if(str[i] == str[j]) {
-
-                bool alreadyPresent = false;
-
-                for(int k = 0; k < characters.length(); k++) {
-                    if(characters[k] == str[i]) {
-                        alreadyPresent = true;
-                        break;
-                    }
-                }
-
-                if(!alreadyPresent) {
-                    characters += str[i];
-                }
-            }
-        }
+    // Count frequencies
+    for(int i = 0; i < str.length(); i++) {
+        freq[str[i] - 'a']++;
     }
 
-    cout << characters;
+    // Print duplicates only once
+    for(int i = 0; i < str.length(); i++) {
+        if(freq[str[i] - 'a'] > 1) {
+            cout << str[i];
+            freq[str[i] - 'a'] = 0;
+        }
+    }
 
     return 0;
 }
